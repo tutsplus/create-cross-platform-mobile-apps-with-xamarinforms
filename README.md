@@ -11,7 +11,7 @@ With the continuing evolution of Xamarin.Forms, sharing UI code has become easie
 
 ## Source Files Description
 
-This repository contains the completed source code for the course projects - cross-platform mobile app that demonstrate features of the Xamarin.Forms framework.
+This repository contains the completed source code for the course projects - cross-platform mobile apps that demonstrate features of the Xamarin.Forms framework.
 
 ## 3rd-Party Content
 
