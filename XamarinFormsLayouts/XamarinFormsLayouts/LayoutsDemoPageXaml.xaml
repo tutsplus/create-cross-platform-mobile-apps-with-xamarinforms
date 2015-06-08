@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+				x:Class="XamarinFormsLayouts.LayoutsDemoPageXaml">
+	<TabbedPage.Children>
+
+		<ContentPage Title="Stack">
+			<StackLayout Orientation="Vertical" Spacing="25" Padding="25">
+				<Button Text="I'm a Button" HorizontalOptions="Center"/>
+				<Label Text="I'm a Label" HorizontalOptions="Center"/>
+			</StackLayout>
+		</ContentPage>
+
+		<ContentPage Title="Absolute">
+			<AbsoluteLayout>
+				<BoxView Color="Red"
+							AbsoluteLayout.LayoutBounds="0, 0, 0.25, 0.25" 
+							AbsoluteLayout.LayoutFlags="All" />
+				<BoxView Color="Blue"
+							AbsoluteLayout.LayoutBounds="0.15, 0.15, 0.25, 0.25"
+							AbsoluteLayout.LayoutFlags="All" />
+				<BoxView Color="Yellow"
+							AbsoluteLayout.LayoutBounds="0.30, 0.30, 0.25, 0.25"
+							AbsoluteLayout.LayoutFlags="All" />
+				<BoxView Color="Purple"
+							AbsoluteLayout.LayoutBounds="0.45, 0.45, 0.25, 0.25"
+							AbsoluteLayout.LayoutFlags="All" />
+				<BoxView Color="Green"
+							AbsoluteLayout.LayoutBounds="0.60, 0.60, 0.25, 0.25"
+							AbsoluteLayout.LayoutFlags="All" />
+			</AbsoluteLayout>
+		</ContentPage>
+
+		<ContentPage Title="Relative">
+			<RelativeLayout>
+				<BoxView Color="Red"
+							RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+							RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"/>
+				<BoxView Color="Blue"
+							RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-40}"
+							RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-40}"/>
+				<BoxView Color="Yellow"
+							x:Name="center"
+							RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.33}"
+							RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}"
+							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.33}"
+							RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}" />
+				<BoxView Color="Purple"
+							RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=center, Property=X}"
+							RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=center, Property=Y}"
+							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, ElementName=center, Property=Width, Factor=0.33}"
+							RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=center, Property=Height, Factor=0.33}" />
+			</RelativeLayout>
+		</ContentPage>
+
+		<ContentPage Title="Grid">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*"/>
+				 	<RowDefinition Height="*"/>
+				 	<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+				 	<ColumnDefinition Width="*"/>
+				 	<ColumnDefinition Width="*"/>
+				 	<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+
+				<Label Text="Cell 0, 0" Grid.Row="0" Grid.Column="0" 
+						BackgroundColor="Red" XAlign="Center" YAlign="Center"/>
+
+				<Label Text="Cell 2, 2" Grid.Row="2" Grid.Column="2" 
+						BackgroundColor="Blue" XAlign="Center" YAlign="Center"/>
+
+				<Label Text="Cell 1, 0 With Span" TextColor="Black" Grid.Row="1" 
+						Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="Yellow" 
+						XAlign="Center" YAlign="Center" />
+			</Grid>
+		</ContentPage>
+
+		<ContentPage Title="ContentView">
+			<ContentView>
+				<Label Text="Hi, I'm a simple Label inside of a simple ContentView"
+						HorizontalOptions="Center"
+						VerticalOptions="Center"/>
+			</ContentView>
+		</ContentPage>
+
+		<ContentPage Title="Scroll">
+			<ScrollView>
+				<Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum ex sit amet tellus tempus cursus. Vivamus rhoncus quam tellus, eget cursus ante dictum vitae. Duis tempus sollicitudin dolor, eget facilisis ex fermentum non. Nulla vel augue non ligula finibus pellentesque vel non augue. Pellentesque augue odio, ullamcorper at magna nec, scelerisque sollicitudin massa. Nullam consectetur arcu non mattis cursus. Praesent semper consequat odio at luctus. Nullam pretium id libero eu mattis. Proin non ipsum quam. Vestibulum bibendum egestas eros at cursus. Sed faucibus accumsan lacus, sed facilisis justo semper vitae. Curabitur vulputate sapien ut erat porta sagittis. Morbi justo ligula, mattis nec metus sed, tempus porta arcu. Aliquam maximus, ligula in aliquam porttitor, diam quam cursus sapien, ut lobortis lorem risus eget libero. Mauris sollicitudin interdum mauris, at rhoncus velit ornare eu. Sed a pulvinar purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec lobortis porttitor ultricies. Aliquam erat volutpat. Pellentesque finibus sollicitudin quam, eget tincidunt ex lobortis ut. Sed maximus semper leo, sed consequat quam dapibus et. Quisque posuere ipsum non augue efficitur semper. Mauris ut est pellentesque, cursus massa eget, consequat velit. Fusce sed enim magna. Fusce tempor neque in elit iaculis commodo fermentum eu elit. In hac habitasse platea dictumst. Quisque venenatis diam id scelerisque sodales. Suspendisse tellus nibh, malesuada in ipsum eu, aliquet bibendum turpis. Quisque aliquam neque non dictum sollicitudin. Integer facilisis a nisl sed dignissim. Sed pretium cursus placerat. Duis vestibulum laoreet sem ut malesuada. Proin eget porta magna. Morbi id purus purus. Maecenas ullamcorper cursus nunc, sit amet tincidunt odio eleifend vitae. Phasellus ultrices tortor fermentum imperdiet molestie. Ut dapibus id eros et fermentum. Proin in tellus a nulla suscipit sagittis non et elit. Sed ullamcorper quis nulla a volutpat. Suspendisse potenti. Nulla sollicitudin dictum aliquam. Proin mattis ligula felis, eget tempus lectus placerat a. Sed auctor posuere viverra. In sit amet sem a sem rhoncus sagittis eu ac ipsum. Nullam sollicitudin nibh risus, condimentum auctor justo malesuada vel. Mauris enim lorem, laoreet vitae accumsan eget, mollis placerat erat. Proin porttitor nulla ac erat aliquet, sed porta ipsum venenatis." />
+			</ScrollView>
+		</ContentPage>
+
+		<ContentPage Title="Frame">
+			<Frame OutlineColor="Red">
+				<Label Text="I've been framed!"
+						HorizontalOptions="Center"
+						VerticalOptions="Center" />
+			</Frame>
+		</ContentPage>
+
+	</TabbedPage.Children>
+</TabbedPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+				x:Class="Triggers.MultiTriggerPage"
+				xmlns:local="clr-namespace:Triggers;assembly=Triggers">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<local:MultiTriggerConverter x:Key="dataHasBeenEntered" />
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.Content>
+		<StackLayout VerticalOptions="CenterAndExpand">
+			<Entry x:Name="user" Placeholder="enter user name" Text="" />
+			<Entry x:Name="password" Placeholder="enter password" Text="" IsPassword="true" />
+			<Button x:Name="loginButton" Text="Log In" FontSize="Large" HorizontalOptions="Center" IsEnabled="false">
+				<Button.Triggers>
+					<MultiTrigger TargetType="Button">
+						<MultiTrigger.Conditions>
+							<BindingCondition Binding="{Binding Source={x:Reference user}, 
+														Path=Text.Length,
+														Converter={StaticResource dataHasBeenEntered}}" Value="true"/>
+							<BindingCondition Binding="{Binding Source={x:Reference password}, 
+														Path=Text.Length,
+														Converter={StaticResource dataHasBeenEntered}}" Value="true"/>
+
+						</MultiTrigger.Conditions>
+
+						<Setter Property="IsEnabled" Value="True"/>
+					</MultiTrigger>
+				</Button.Triggers>
+			</Button>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

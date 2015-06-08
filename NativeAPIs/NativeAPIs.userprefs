@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="iOS/NativeAPIs.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NativeAPIs/NetworkStatusPage.cs">
+    <Files>
+      <File FileName="NativeAPIs/NativeAPIs.cs" Line="22" Column="37" />
+      <File FileName="Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="NativeAPIs/NetworkStatusPage.cs" Line="34" Column="60" />
+      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="iOS/Reachability.cs" Line="156" Column="1" />
+      <File FileName="NativeAPIs/INetworkService.cs" Line="11" Column="1" />
+      <File FileName="Droid/NetworkService_Android.cs" Line="6" Column="1" />
+      <File FileName="iOS/NetworkService_iOS.cs" Line="22" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

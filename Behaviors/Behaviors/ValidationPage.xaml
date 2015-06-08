@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+				x:Class="Behaviors.ValidationPage"
+				xmlns:local="clr-namespace:Behaviors;assembly=Behaviors">
+	<ContentPage.Content>
+		<StackLayout VerticalOptions="CenterAndExpand">
+			<Label Text="Enter an integer" XAlign="Center"/>
+			<Entry Placeholder="Enter an integer">
+				<Entry.Behaviors>
+					<local:IntegerValidationBehavior />
+				</Entry.Behaviors>
+			</Entry>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

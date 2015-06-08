@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="iOS/Behaviors.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.8.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Behaviors/ValidationPage.xaml">
+    <Files>
+      <File FileName="Behaviors/Behaviors.cs" Line="13" Column="4" />
+      <File FileName="Behaviors/ValidationPage.xaml" Line="11" Column="41" />
+      <File FileName="Behaviors/ValidationPage.xaml.cs" Line="19" Column="42" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

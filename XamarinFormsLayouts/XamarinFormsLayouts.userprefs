@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="iOS/XamarinFormsLayouts.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinFormsLayouts/LayoutsDemoPageXaml.xaml">
+    <Files>
+      <File FileName="XamarinFormsLayouts/LayoutsDemoPage.cs" Line="22" Column="28" />
+      <File FileName="XamarinFormsLayouts/XamarinFormsLayouts.cs" Line="12" Column="38" />
+      <File FileName="XamarinFormsLayouts/LayoutsDemoPageXaml.xaml" Line="99" Column="27" />
+      <File FileName="XamarinFormsLayouts/LayoutsDemoPageXaml.xaml.cs" Line="8" Column="55" />
+      <File FileName="XamarinFormsLayouts/obj/Debug/LayoutsDemoPageXaml.xaml.g.cs" Line="17" Column="26" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

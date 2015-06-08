@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="iOS/XamarinFormsCells.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinFormsCells/SampleCellsDemo.cs">
+    <Files>
+      <File FileName="XamarinFormsCells/XamarinFormsCells.cs" Line="24" Column="3" />
+      <File FileName="XamarinFormsCells/SampleCellsDemo.cs" Line="70" Column="7" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

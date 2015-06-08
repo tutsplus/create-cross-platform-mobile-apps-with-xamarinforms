@@ -1,0 +1,25 @@
+﻿<Properties StartupItem="iOS/Triggers.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.8.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Triggers/MultiTriggerPage.xaml">
+    <Files>
+      <File FileName="Triggers/TriggerDemoPage.xaml" Line="1" Column="1" />
+      <File FileName="Triggers/TriggerDemoPage.xaml.cs" Line="8" Column="51" />
+      <File FileName="Triggers/TriggerPage.xaml" Line="9" Column="20" />
+      <File FileName="Triggers/TriggerPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Triggers/EventTriggerPage.xaml" Line="8" Column="9" />
+      <File FileName="Triggers/EventTriggerPage.xaml.cs" Line="23" Column="58" />
+      <File FileName="Triggers/Triggers.cs" Line="1" Column="1" />
+      <File FileName="Triggers/obj/Debug/TriggerDemoPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="Triggers/DataTriggerPage.xaml" Line="22" Column="24" />
+      <File FileName="Triggers/DataTriggerPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Triggers/obj/Debug/EventTriggerPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="Triggers/MultiTriggerPage.xaml" Line="34" Column="32" />
+      <File FileName="Triggers/MultiTriggerPage.xaml.cs" Line="23" Column="7" />
+      <File FileName="Triggers/obj/Debug/MultiTriggerPage.xaml.g.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

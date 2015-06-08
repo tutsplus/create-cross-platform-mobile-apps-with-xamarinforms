@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+				x:Class="XamarinFormsPages.PagesDemoXaml">
+
+	<TabbedPage.Children>
+
+
+		<ContentPage Title="ContentPage">
+			<Label Text="This is a simple ContentPage"
+				HorizontalOptions="Center"
+				VerticalOptions="Center" />
+		</ContentPage>
+
+
+
+		<MasterDetailPage Title="MasterDetailPage">
+
+			<MasterDetailPage.Master>
+				<ContentPage Title = "Master" BackgroundColor = "White">
+					<Label Text="This is the Master page."
+						TextColor="Black"
+						HorizontalOptions="Center"
+						VerticalOptions="Center" />
+				</ContentPage>
+			</MasterDetailPage.Master>
+
+			<MasterDetailPage.Detail>
+				<ContentPage BackgroundColor="White" Title="Detail">
+					<Label Text="This is the Detail page."
+						TextColor="Black"
+						HorizontalOptions="Center"
+						VerticalOptions="Center" />
+				</ContentPage>
+			</MasterDetailPage.Detail>
+
+		</MasterDetailPage>
+
+
+
+		<CarouselPage Title="Carousel">
+
+			<CarouselPage.Children>
+
+				<ContentPage>
+					<Label Text="Hi, I'm Page1!"
+					HorizontalOptions="Center"
+					VerticalOptions="Center"/>
+				</ContentPage>
+
+				<ContentPage>
+					<Label Text="Hi, I'm Page2"
+					HorizontalOptions="Center"
+					VerticalOptions="Center"/>
+				</ContentPage>
+
+			</CarouselPage.Children>
+		</CarouselPage>
+
+
+	</TabbedPage.Children>
+</TabbedPage>
